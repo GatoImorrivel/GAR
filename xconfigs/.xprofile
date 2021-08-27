@@ -1,0 +1,3 @@
+# Setting keyboard layout
+
+setxkbmap -layout br &
