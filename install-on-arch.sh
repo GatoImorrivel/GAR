@@ -4,13 +4,15 @@ sudo pacman --noconfirm -Syu
 
 # Install dependecies
 echo "Installing a bunch of stuff"
-sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git
+sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc
 
 # Setup lightdm
 sudo systemctl enable lightdm
 
 # Installing NVIM
 sudo pacman -S --noconfirm --needed neovim
+
+clear
 
 # Install rust for alacritty
 echo "installing Rust and alacritty"
@@ -27,6 +29,8 @@ sudo cp target/release/alacritty /usr/local/bin
 sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
+
+clear
 
 # Copying BSPWM, SXHKD and NVIM configs
 mkdir ~/.config
