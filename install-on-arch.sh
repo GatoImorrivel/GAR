@@ -38,8 +38,8 @@ mkdir ~/.config
 mkdir ~/.config/bspwm/
 mkdir ~/.config/sxhkd/
 
-sudo cp -r ~/GAR/config/bspwm ~/.config/
-sudo cp -r ~/GAR/config/sxhkd ~/.config/
+sudo cp -r ~/GAR/config/bspwm/bspwmrc ~/.config/bspwm/
+sudo cp -r ~/GAR/config/sxhkd/sxhkdrc ~/.config/sxhkd/
 
 # Copying xinit and xprofile
 sudo cp ~/GAR/xconfigs/.xinit ~/
