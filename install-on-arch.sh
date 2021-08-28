@@ -21,8 +21,8 @@ sudo pacman -S --needed rustup cargo
 rustup default stable
 
 # Installing paru
-mkdir ./.srcs
-git clone https://aur.archlinux.org/paru.git ./.srcs/
+mkdir ./.srcs/paru
+git clone https://aur.archlinux.org/paru.git ./.srcs/paru
 cd ./.srcs/paru
 makepkg -si
 paru -Syu
