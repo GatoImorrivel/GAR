@@ -13,6 +13,6 @@ ill add them when its finished
 
 # Installing
 
-Just clone it with git and chmod _install-on-arch.sh_ file.  
+Just clone it with git and chmod `install-on-arch.sh` file.  
 After that just run the file and wait a little bit.  
 On the rust installation i use the package from the community repo
