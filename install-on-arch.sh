@@ -4,7 +4,7 @@ sudo pacman --noconfirm -Syu
 
 # Install dependecies
 echo "Installing a bunch of stuff"
-sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel picom nitrogen
+sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel nitrogen
 
 # Setup lightdm and nitrogen
 sudo systemctl enable lightdm &
@@ -29,8 +29,11 @@ cd ./.srcs/paru
 makepkg -si
 paru -Syu
 
+# Install picom from jonaburg's repo
+paru -S --noconfirm --needed picom-jonaburg-git
+
 # Installing alacritty
-paru -S alacritty
+paru -S --noconfirm --needed alacritty
 
 # Copying BSPWM, SXHKD, NVIM, Alacritty and PICOM configs
 mkdir ~/.config
