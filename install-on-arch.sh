@@ -31,14 +31,25 @@ paru -Syu
 # Installing alacritty
 paru -S alacritty
 
-# Copying BSPWM, SXHKD and NVIM configs
+# Copying BSPWM, SXHKD, NVIM, Alacritty and PICOM configs
 mkdir ~/.config
 
+# BSPWM and SXHKD
 mkdir ~/.config/bspwm/
 mkdir ~/.config/sxhkd/
 
 sudo cp -r ~/GAR/configs/bspwm/bspwmrc ~/.config/bspwm/
 sudo cp -r ~/GAR/configs/sxhkd/sxhkdrc ~/.config/sxhkd/
+
+# Alacritty
+mkdir ~/.config/alacritty/
+
+sudo cp -r ~/GAR/configs/alacritty/alacritty.yml ~/.config/alacritty/
+
+# Picom
+mkdir ~/.config/picom/
+
+sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 
 # Copying xinit and xprofile
 sudo cp ~/GAR/xconfigs/.xinit ~/
