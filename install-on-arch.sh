@@ -44,7 +44,7 @@ sudo cp -r ~/GAR/configs/sxhkd/sxhkdrc ~/.config/sxhkd/
 # Alacritty
 mkdir ~/.config/alacritty/
 
-sudo cp -r ~/GAR/configs/alacritty/alacritty.yaml ~/.config/alacritty/
+sudo cp -r ~/GAR/configs/alacritty/alacritty.yml ~/.config/alacritty/
 
 # Picom
 mkdir ~/.config/picom/
