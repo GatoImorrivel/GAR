@@ -22,7 +22,7 @@ rustup default stable
 
 # Installing paru
 mkdir ./.srcs
-git clone https://aur.archlinux.org/paru.git ./.srcs
+git clone https://aur.archlinux.org/paru.git ./.srcs/
 cd ./.srcs/paru
 makepkg -si
 paru -Syu
