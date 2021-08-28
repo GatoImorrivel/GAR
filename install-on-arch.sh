@@ -7,9 +7,10 @@ echo "Installing a bunch of stuff"
 sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel picom nitrogen
 
 # Setup lightdm and nitrogen
-sudo systemctl enable lightdm
+sudo systemctl enable lightdm &
 
-nitrogen ./wallpapers/
+nitrogen ./wallpapers/wallpaper.jpg &
+nitrogen --set-zoom-fill &
 
 # Installing NVIM
 sudo pacman -S --noconfirm --needed neovim
