@@ -13,18 +13,18 @@ window:
 
 font:
   normal:
-    family: Source Code Pro
-
+    family: Ubuntu Mono
+    
   bold:
-    family: Source Code Pro
+    family: Ubuntu Mono
 
   italic:
-    family: Source Code Pro
+    family: Ubuntu Mono
 
   bold_italic:
-    family: Source Code Pro
+    family: Ubuntu Mono
 
-  size: 9
+  size: 12
 
 colors:
   # Default colors

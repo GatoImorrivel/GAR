@@ -1,10 +1,11 @@
 /* THIS IS FOR VISUALIZING COLORS IN VSCODE 
     TO ACTUALLY CHANGE COLORS CHANGE THEM ON THE configs/color-scheme
+    https://colorhunt.co/palette/1624471f40681b1b2fe43f5a
 */
 
 .color-scheme {
     color: #E43F5A; /* focused border color*/
-    color: #1B1B2F; /* unfocused border color*/
-    color: #162447; 
+    color: #1B1B2F; 
+    color: #162447; /* unfocused border color*/
     color: #1F4068; 
 }

@@ -4,7 +4,7 @@ sudo pacman --noconfirm -Syu
 
 # Install dependecies
 echo "Installing a bunch of stuff"
-sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel xwallpaper
+sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel xwallpaper ttf-ubuntu-font-family
 
 # Setup lightdm and nitrogen
 sudo systemctl enable lightdm &
@@ -46,6 +46,10 @@ sudo cp -r ~/GAR/configs/sxhkd/sxhkdrc ~/.config/sxhkd/
 mkdir ~/.config/alacritty/
 
 sudo cp -r ~/GAR/configs/alacritty/alacritty.yml ~/.config/alacritty/
+
+sudo rm ~/.bashrc
+
+sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
 # Picom
 mkdir ~/.config/picom/
