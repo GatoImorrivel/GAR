@@ -4,7 +4,7 @@ sudo pacman --noconfirm -Syu
 
 # Install dependecies
 echo "Installing a bunch of stuff"
-sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel
+sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel xwallpaper
 
 # Setup lightdm and nitrogen
 sudo systemctl enable lightdm &
