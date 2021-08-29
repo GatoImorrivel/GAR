@@ -27,7 +27,7 @@ makepkg -si
 paru -Syu
 
 # Install picom from jonaburg's repo
-paru -S --noconfirm --needed picom-jonaburg-git
+paru -S picom-jonaburg-git
 
 # Installing alacritty
 paru -S --noconfirm --needed alacritty
