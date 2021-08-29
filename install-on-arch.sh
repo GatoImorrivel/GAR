@@ -57,6 +57,9 @@ mkdir ~/.config/wallpapers/
 
 sudo cp -r ~/GAR/wallpapers/*.* ~/.config/wallpapers/
 
+# Color scheme
+sudo cp ~/GAR/configs/color-scheme ~/.config/
+
 # Copying xinit and xprofile
 sudo cp ~/GAR/xconfigs/.xinit ~/
 sudo cp ~/GAR/xconfigs/.xprofile ~/

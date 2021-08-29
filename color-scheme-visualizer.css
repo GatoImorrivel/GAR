@@ -1,0 +1,10 @@
+/* THIS IS FOR VISUALIZING COLORS IN VSCODE 
+    TO ACTUALLY CHANGE COLORS CHANGE THEM ON THE configs/color-scheme
+*/
+
+.color-scheme {
+    color: #E43F5A; /* focused border color*/
+    color: #1B1B2F; /* unfocused border color*/
+    color: #162447; 
+    color: #1F4068; 
+}
