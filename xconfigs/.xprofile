@@ -2,4 +2,4 @@
 setxkbmap -layout br &
 
 # Setting wallpaper
-xwallpaper --zoom ~/.config/wallpapers/wallpaper.jpg
+xwallpaper --zoom ~/.config/wallpapers/*.*
