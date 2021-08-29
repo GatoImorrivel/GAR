@@ -3,9 +3,10 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i*]] && return
+[[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias pac='sudo pacman -Syu'
 
 BLACK="\[\e[30m\]"
 BLUE="\[\e[34m\]"
@@ -16,6 +17,4 @@ RED="\[\e[31m\]"
 WHITE="\[\e[37m\]"
 YELLOW="\[\e[33m\]"
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-export PS1='${YELLOW}[${CYAN}\u@\H|\W${YELLOW}]${RED}\\$\]'
+PS1="${YELLOW}[${CYAN}\u@\H|${RED}\W${YELLOW}]${RED}\\$\]${WHITE} "

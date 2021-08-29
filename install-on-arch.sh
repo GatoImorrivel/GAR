@@ -4,7 +4,13 @@ sudo pacman --noconfirm -Syu
 
 # Install dependecies
 echo "Installing a bunch of stuff"
-sudo pacman -S --noconfirm --needed xorg xorg-xinit bspwm sxhkd lightdm lightdm-gtk-greeter git python3 gcc base-devel xwallpaper ttf-ubuntu-font-family
+sudo pacman -S --noconfirm --needed xorg xorg-xinit\
+    bspwm sxhkd                     \
+    lightdm lightdm-gtk-greeter     \
+    git python3 gcc base-devel      \
+    xwallpaper                      \
+    ttf-ubuntu-font-family          \
+    rofi
 
 # Setup lightdm and nitrogen
 sudo systemctl enable lightdm &
@@ -60,9 +66,6 @@ sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 mkdir ~/.config/wallpapers/
 
 sudo cp -r ~/GAR/wallpapers/*.* ~/.config/wallpapers/
-
-# Color scheme
-sudo cp ~/GAR/configs/color-scheme ~/.config/
 
 # Copying xinit and xprofile
 sudo cp ~/GAR/xconfigs/.xinit ~/
