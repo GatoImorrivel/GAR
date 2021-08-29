@@ -1,3 +1,5 @@
 # Setting keyboard layout
-
 setxkbmap -layout br &
+
+# Setting wallpaper
+xwallpaper --zoom ~/.config/wallpapers/wallpaper.jpg
