@@ -55,7 +55,7 @@ sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 # Wallpaper
 mkdir ~/.config/wallpapers/
 
-sudo cp -r ~/GAR/wallpapers/wallpaper.jpg ~/.config/wallpapers/
+sudo cp -r ~/GAR/wallpapers/*.* ~/.config/wallpapers/
 
 # Copying xinit and xprofile
 sudo cp ~/GAR/xconfigs/.xinit ~/
