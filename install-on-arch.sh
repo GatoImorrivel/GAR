@@ -57,6 +57,11 @@ sudo rm ~/.bashrc
 
 sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
+# Nvim
+mkdir -p ~/data/plugged
+
+sudo cp ~/GAR/configs/nvim/init.vim ~/data/plugged/
+
 # Picom
 mkdir ~/.config/picom/
 

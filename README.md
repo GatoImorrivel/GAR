@@ -6,8 +6,7 @@ This is my script for installing a GUI on Arch. This was made for my own use but
 - TWM - BSPWM
 - Compositor - Picom
 - App launcher - rofi
-- Bar - Polybar
-- Widgets - eww
+- Widgets & bar - eww
 
 # Screenshots
 ill add them when its finished
