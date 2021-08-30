@@ -62,11 +62,6 @@ mkdir ~/.config/picom/
 
 sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 
-# Polybar
-mkdir ~/.config/polybar/
-
-sudo cp -r ~/GAR/configs/polybar/config ~/.config/polybar/
-
 # Wallpaper
 mkdir ~/.config/wallpapers/
 
