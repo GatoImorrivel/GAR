@@ -38,6 +38,9 @@ paru -S picom-jonaburg-git
 # Installing alacritty
 paru -S --noconfirm --needed alacritty
 
+# Nvim plugin stuff
+paru -S vim-plug
+
 # Copying BSPWM, SXHKD, NVIM, Alacritty and PICOM configs
 mkdir ~/.config
 
