@@ -1,5 +1,10 @@
 #! /bin/sh
 
+# Killing any possible previous processes
+killall -q picom
+killall -q sxhkd
+killall -q polybar
+
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
