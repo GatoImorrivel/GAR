@@ -1,0 +1,10 @@
+{
+  "clangd.arguments": ["--background-index", "--compile-commands-dir=build"],
+  "clangd.semanticHighlighting": true,
+  "explorer.width": 30,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.file.reveal.whenOpen": true,
+  "explorer.openAction.relativePath": false,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false
+}
