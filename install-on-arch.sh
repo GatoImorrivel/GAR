@@ -10,7 +10,10 @@ sudo pacman -S --noconfirm --needed xorg xorg-xinit\
     git python3 gcc base-devel      \
     xwallpaper                      \
     ttf-ubuntu-font-family          \
-    rofi
+    rofi                            \
+    yarn                            \
+    nodejs                          \
+    ttf-nerd-fonts-symbols
 
 # Setup lightdm and nitrogen
 sudo systemctl enable lightdm &
@@ -38,6 +41,13 @@ paru -S picom-jonaburg-git
 # Installing alacritty
 paru -S --noconfirm --needed alacritty
 
+# Installing eww
+echo "####################################"
+echo "PLEASE DONT USE THE WAYLAND VERSION"
+echo "###################################"
+sleep 5
+paru -S eww
+
 # Nvim plugin stuff
 paru -S vim-plug
 
@@ -60,13 +70,20 @@ sudo rm ~/.bashrc
 
 sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
-# Nvim
+# Nvim. Thanks uncle!
+sudo chmod 777 ~/GAR/configs/nvim/install-config.sh
 ~/GAR/configs/nvim/install-config.sh
 
 # Picom
 mkdir ~/.config/picom/
 
 sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
+
+# Eww
+mkdir ~/.config/eww/
+
+sudo cp -r ~/GAR/configs/eww/eww.yuck ~/.config/eww/
+sudo cp -r ~/GAR/configs/eww/eww.scss ~/.config/eww/
 
 # Wallpaper
 mkdir ~/.config/wallpapers/
