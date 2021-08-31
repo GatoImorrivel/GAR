@@ -21,4 +21,4 @@ abspath "./settings.vim"
 settings_path=$result
 mkdir -p ~/.config/nvim
 printf "execute \"source \" . fnamemodify(\""${settings_path}\"", \":p\")" > ~/.config/nvim/init.vim
-cp ./coc-settings.json ~/.config/nvim/coc-settings.json
+cp ~/GAR/configs/nvim/coc-settings.json ~/.config/nvim/coc-settings.json

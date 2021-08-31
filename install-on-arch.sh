@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm --needed xorg xorg-xinit\
     rofi                            \
     yarn                            \
     nodejs                          \
+    npm                             \
     ttf-nerd-fonts-symbols
 
 # Setup lightdm and nitrogen
