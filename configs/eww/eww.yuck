@@ -1,0 +1,61 @@
+(defwidget bar []
+  (centerbox :orientation "h"
+    (workspaces)
+    (timebar)
+    (sidestuff)
+  )
+)
+
+(defwidget workspaces []
+  (box :class "workspaces"
+       :orientation "h"
+       :space-evenly true
+       :halign "start"
+       (box :class "archlogo" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'I'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'II'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'III'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'IV'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'V'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'VI'" "")
+       (button :class "worklabel" :onclick "bspc desktop -f 'VII'" "")
+  )
+)
+
+(defwidget timebar []
+  (box :class "time"
+       :orientation "h"
+       :space-evenly "true"
+       :halign "end"
+    time
+  )
+)
+
+(defwidget sidestuff []
+  (box :class "date" 
+    date
+  )
+)
+
+(defpoll time :interval "10s"
+  "date '+%H:%M'"
+)
+
+(defpoll date :interval "10s"
+  "date '+%d of %B | %A'"
+)
+
+(defwindow bar
+          :monitor 0
+          :geometry (geometry :x "0%"
+                              :y "0px"
+                              :width "100%"
+                              :heigth "20px"
+                              :anchor "top center"
+                    )
+          :stacking "fg"
+          :reserve (struts :distance "20px" :side "top")
+          :windowtype "dock"
+          :wm-ignore true
+  (bar)
+)

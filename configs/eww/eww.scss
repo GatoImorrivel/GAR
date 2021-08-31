@@ -1,0 +1,36 @@
+* {
+    all: unset;
+}
+
+.bar {
+    background-color: #192431;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.time {
+    color: rgb(115, 155, 255);
+}
+
+.date {
+    color: rgb(115, 155, 255);
+}
+
+.archlogo {
+    color: rgb(115, 155, 255);
+    background-color: #e43f5a;
+    font-size: 20;
+    border-bottom-right-radius: 20px;
+}
+
+.worklabel {
+    // color: #e43f5a;
+    color: rgb(115, 155, 255);
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20;
+    &:hover {
+      color: #e43f5a;
+    }
+}
