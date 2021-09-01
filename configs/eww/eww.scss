@@ -23,7 +23,7 @@
     border-bottom-right-radius: 20px;
 }
 
-.worklabel {
+.workspaceInactive {
     // color: #e43f5a;
     color: rgb(115, 155, 255);
     padding-top: 1px;
@@ -33,4 +33,13 @@
     &:hover {
       color: #e43f5a;
     }
+}
+
+.workspaceActive {
+    // color: #e43f5a;
+    color: #e43f5a;
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20;
 }

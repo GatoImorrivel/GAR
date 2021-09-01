@@ -12,13 +12,13 @@
        :space-evenly true
        :halign "start"
        (box :class "archlogo" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'I'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'II'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'III'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'IV'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'V'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'VI'" "")
-       (button :class "worklabel" :onclick "bspc desktop -f 'VII'" "")
+       (button :class workspaceActive0 :onclick "bspc desktop -f 'I'" "")
+       (button :class workspaceActive1 :onclick "bspc desktop -f 'II'" "")
+       (button :class workspaceActive2 :onclick "bspc desktop -f 'III'" "")
+       (button :class workspaceActive3 :onclick "bspc desktop -f 'IV'" "")
+       (button :class workspaceActive4 :onclick "bspc desktop -f 'V'" "")
+       (button :class workspaceActive5 :onclick "bspc desktop -f 'VI'" "")
+       (button :class workspaceActive6 :onclick "bspc desktop -f 'VII'" "")
   )
 )
 
@@ -36,6 +36,15 @@
     date
   )
 )
+
+(defvar workspaceActive0 "workspaceActive")
+(defvar workspaceActive1 "workspaceInactive")
+(defvar workspaceActive2 "workspaceInactive")
+(defvar workspaceActive3 "workspaceInactive")
+(defvar workspaceActive4 "workspaceInactive")
+(defvar workspaceActive5 "workspaceInactive")
+(defvar workspaceActive6 "workspaceInactive")
+
 
 (defpoll time :interval "10s"
   "date '+%H:%M'"
