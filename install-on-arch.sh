@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm --needed xorg xorg-xinit\
     yarn                            \
     nodejs                          \
     npm                             \
+    xclip                           \
     ttf-nerd-fonts-symbols
 
 # Setup lightdm and nitrogen
@@ -72,6 +73,7 @@ sudo rm ~/.bashrc
 sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
 # Nvim. Thanks uncle!
+npm install -g neovim
 sudo chmod 777 ~/GAR/configs/nvim/install-config.sh
 ~/GAR/configs/nvim/install-config.sh
 
