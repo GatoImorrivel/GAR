@@ -70,9 +70,11 @@ sudo rm ~/.bashrc
 sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
 # Nvim. Thanks uncle!
+mkdir ~/.config/nvim/
+
 sudo npm install -g neovim
-sudo chmod 777 ~/GAR/configs/nvim/install-config.sh
-~/GAR/configs/nvim/install-config.sh
+
+sudo cp -r ~/GAR/configs/nvim/ ~/.config/nvim/
 
 # Picom
 mkdir ~/.config/picom/
