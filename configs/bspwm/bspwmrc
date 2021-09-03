@@ -10,9 +10,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 eww daemon
 eww open bar
+echo 1 > ~/.config/scripts/currentwindow
+echo 1 > ~/.config/scripts/previouswindow
 
 # Monitors
-bspc monitor -d I II III IV V VI VII
+bspc monitor -d 1 2 3 4 5 6 7
 
 # Mouse configs
 bspc config pointer_modifier mod4

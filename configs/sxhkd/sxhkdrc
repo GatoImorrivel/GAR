@@ -67,12 +67,15 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+super + bracketleft
+	sh ~/.config/scripts/windowswitch.sh -n
 
-# focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+super + bracketright
+  sh ~/.config/scripts/windowswitch.sh -p
+
+# focus the last desktop
+super + Tab
+	sh ~/.config/scripts/windowswitch.sh -l
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -80,9 +83,31 @@ super + {o,i}
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+# focus to the given desktop
+super + 1
+	sh ~/.config/scripts/windowswitch.sh 1
+
+super + 2
+	sh ~/.config/scripts/windowswitch.sh 2
+
+super + 3
+	sh ~/.config/scripts/windowswitch.sh 3
+
+super + 4
+	sh ~/.config/scripts/windowswitch.sh 4
+
+super + 5
+	sh ~/.config/scripts/windowswitch.sh 5
+
+super + 6
+	sh ~/.config/scripts/windowswitch.sh 6
+
+super + 7
+	sh ~/.config/scripts/windowswitch.sh 7
+
+# send to given window
+super + shift + {1-9,0}
+  bspc node -d '^{1-9,10}'
 
 #
 # preselect
