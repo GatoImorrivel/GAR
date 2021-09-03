@@ -82,6 +82,11 @@ mkdir ~/.config/picom/
 
 sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 
+# Scripts
+mkdir ~/.config/scripts/
+
+sudo cp -r ~/GAR/configs/scripts/ ~/.config/scripts/
+
 # Eww
 mkdir ~/.config/eww/
 
