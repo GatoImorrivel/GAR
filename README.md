@@ -19,6 +19,6 @@ On the rust installation i use the package from the community repo
 
 ## Nvim Installation
 ### Execute these commands inside Nvim
-    `:CocInstall coc-lists`  
-    `:CocInstall coc-marketplace`  
-    `:CocList marketplace` 
+    :CocInstall coc-lists  
+    :CocInstall coc-marketplace  
+    :CocList marketplace 
