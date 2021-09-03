@@ -44,7 +44,7 @@ paru -S picom-jonaburg-git
 paru -S --noconfirm --needed alacritty
 
 # Installing eww
-paru -S eww-git
+sudo cp -r ~/GAR/configs/bin/eww /usr/bin/
 
 # Nvim plugin stuff
 paru -S vim-plug
