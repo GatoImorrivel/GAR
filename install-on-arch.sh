@@ -15,6 +15,7 @@ sudo pacman -S --noconfirm --needed xorg xorg-xinit\
     nodejs                          \
     npm                             \
     xclip                           \
+    cmake                           \
     ttf-nerd-fonts-symbols
 
 # Setup lightdm and nitrogen
@@ -44,7 +45,7 @@ paru -S picom-jonaburg-git
 paru -S --noconfirm --needed alacritty
 
 # Installing eww
-sudo cp -r ~/GAR/configs/bin/eww /usr/bin/
+sudo cp -r ~/GAR/bin/eww /usr/bin/
 
 # Nvim plugin stuff
 paru -S vim-plug
@@ -69,7 +70,7 @@ sudo rm ~/.bashrc
 sudo cp ~/GAR/configs/bashrc/.bashrc ~/.bashrc
 
 # Nvim. Thanks uncle!
-npm install -g neovim
+sudo npm install -g neovim
 sudo chmod 777 ~/GAR/configs/nvim/install-config.sh
 ~/GAR/configs/nvim/install-config.sh
 
@@ -79,8 +80,6 @@ mkdir ~/.config/picom/
 sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 
 # Scripts
-mkdir ~/.config/scripts/
-
 sudo chmod 777 ~/GAR/configs/scripts/currentwindow
 sudo chmod 777 ~/GAR/configs/scripts/previouswindow
 sudo chmod 777 ~/GAR/configs/scripts/windowswitch.sh
