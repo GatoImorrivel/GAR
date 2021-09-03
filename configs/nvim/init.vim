@@ -295,12 +295,10 @@ if !exists('g:vscode')
   Plug 'OmniSharp/omnisharp-vim'
   Plug 'jackguo380/vim-lsp-cxx-highlight'
   Plug 'pangloss/vim-javascript'
-  Plug 'joshdick/onedark.vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'yuezk/vim-js'
   Plug 'marcopaganini/mojave-vim-theme'
   Plug 'marcopaganini/termschool-vim-theme'
-  Plug 'atahabaki/archman-vim'
   Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
   Plug 'freitass/todo.txt-vim'
 

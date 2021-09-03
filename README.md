@@ -16,3 +16,9 @@ ill add them when its finished
 Just clone it with git and chmod `install-on-arch.sh` file.  
 After that just run the file and wait a little bit.  
 On the rust installation i use the package from the community repo
+
+## Nvim Installation
+### Execute these commands inside Nvim
+    `:CocInstall coc-lists`  
+    `:CocInstall coc-marketplace`  
+    `:CocList marketplace` 
