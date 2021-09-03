@@ -85,6 +85,11 @@ sudo cp -r ~/GAR/configs/picom/picom.conf ~/.config/picom/
 # Scripts
 mkdir ~/.config/scripts/
 
+sudo chmod 777 ~/GAR/configs/scripts/currentwindow
+sudo chmod 777 ~/GAR/configs/scripts/previouswindow
+sudo chmod 777 ~/GAR/configs/scripts/windowswitch.sh
+
+
 sudo cp -r ~/GAR/configs/scripts/ ~/.config/scripts/
 
 # Eww
