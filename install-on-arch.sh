@@ -44,11 +44,7 @@ paru -S picom-jonaburg-git
 paru -S --noconfirm --needed alacritty
 
 # Installing eww
-echo "####################################"
-echo "PLEASE DONT USE THE WAYLAND VERSION"
-echo "###################################"
-sleep 5
-paru -S eww
+paru -S eww-git
 
 # Nvim plugin stuff
 paru -S vim-plug
@@ -88,7 +84,6 @@ mkdir ~/.config/scripts/
 sudo chmod 777 ~/GAR/configs/scripts/currentwindow
 sudo chmod 777 ~/GAR/configs/scripts/previouswindow
 sudo chmod 777 ~/GAR/configs/scripts/windowswitch.sh
-
 
 sudo cp -r ~/GAR/configs/scripts/ ~/.config/scripts/
 
