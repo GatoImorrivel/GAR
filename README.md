@@ -11,7 +11,7 @@ All of the settings are made with 1920x1080, functionality in other resolutions 
 
 # Screenshots
 <img src='/screenshots/desktop.png'>
-<img src='/screenshots/unixporntypeshit.png'>
+<img src='/screenshots/unixporntypestuff.png'>
 <img src='/screenshots/powermenu.png'>
 
 # Installing
