@@ -8,17 +8,17 @@
 }
 
 .time {
-    color: #4acfff;
+    color: rgb(115, 155, 255);
     padding-top: 3px;
 }
 
 .date {
-    color: #4acfff;
+    color: rgb(115, 155, 255);
     padding-top: 3px;
 }
 
 .archlogo {
-    color: #4acfff;
+    color: rgb(115, 155, 255);
     padding-top: 3px;
     font-size: 20;
     border-bottom-right-radius: 20px;
@@ -26,7 +26,7 @@
 
 .workspaceInactive {
     // color: #e43f5a;
-    color: #4acfff;
+    color: rgb(115, 155, 255);
     padding-top: 3px;
     padding-left: 25px;
     padding-right: 25px;
@@ -43,4 +43,9 @@
     padding-left: 25px;
     padding-right: 25px;
     font-size: 20;
+}
+
+.previousWorkspace {
+  color: rgb(115, 155, 255);
+  padding-top: 3px;
 }
