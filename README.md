@@ -1,5 +1,5 @@
 # Gato's Auto Ricer
-This is my script for installing a GUI on Arch. This was made for my own use but feel free to fork it.
+This is my script for installing a GUI on Arch. This was made for my own use but feel free to fork it.  
 All of the settings are made with 1920x1080, functionality in other resolutions is not guaranteed.
 
 ## Specs
