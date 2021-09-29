@@ -46,6 +46,56 @@
 }
 
 .previousWorkspace {
-  color: rgb(115, 155, 255);
+  color: rgba(115, 155, 255, 0);
   padding-top: 3px;
 }
+
+.powerButton {
+  color: rgb(115, 155, 255);
+  font-size: 15px;
+  padding-left: 120px;
+  &:hover {
+    color: #e43f5a;
+  }
+}
+
+.mainPower {
+  padding-top: 410px;
+  padding-bottom: 410px;
+  background-color: rgb(115, 155, 255, 0.10);
+}
+
+.shutoffBox, .rebootBox, .closeBox {
+  font-size: 100px;
+  background-color: #192431;
+  border-radius: 20px;
+}
+
+.closeBox {
+
+}
+
+.shutoffButton, .rebootButton, .closeButton {
+  color: rgb(115, 155, 255);
+  &:hover {
+    color: #e43f5a;
+  }
+  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.shutoffBox {
+  margin-left: 650px;
+}
+
+.closeBox {
+  margin-right: 650px;
+}
+
+.rebootBox {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+

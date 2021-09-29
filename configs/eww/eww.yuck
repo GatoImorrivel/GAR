@@ -30,6 +30,9 @@
           :onclick "sh ~/.config/scripts/windowswitch.sh -c 6" "")
        (button :class {activeWorkspace == "7" ? "workspaceActive" : "workspaceInactive"} 
           :onclick "sh ~/.config/scripts/windowswitch.sh -c 7" "")
+       (box :class "previousWorkspace"
+          previousWorkspace
+       )
   )
 )
 
@@ -50,8 +53,9 @@
     (box :class "date" 
       date
     )
-    (box :class "previousWorkspace"
-      previousWorkspace
+    (box
+      (button :class "powerButton" 
+      :onclick "eww open powermenu" "⏻")
     )
   )
 )
@@ -75,7 +79,36 @@
                     )
           :stacking "fg"
           :reserve (struts :distance "20px" :side "top")
-          :windowtype "dock"
+          :windowtype "toolbar"
           :wm-ignore true
   (bar)
+)
+
+(defwidget powermenu []
+  (centerbox :orientation "h"
+             :class "mainPower"
+      (box :class "shutoffBox"
+        (button :class "shutoffButton" :onclick "shutdown now" "⏻")
+      )
+      (box :class "rebootBox"
+        (button :class "rebootButton" :onclick "reboot" "")
+      )
+      (box :class "closeBox"
+        (button :class "closeButton" :onclick "eww close powermenu" "")
+      )
+  )
+)
+
+(defwindow powermenu
+           :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "0px"
+                               :width "100%"
+                               :heigth "100%"
+                               :anchor "center"
+                     )
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (powermenu)
 )
