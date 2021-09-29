@@ -68,10 +68,10 @@ super + {_,shift + }c
 
 # focus the next/previous desktop in the current monitor
 super + bracketleft
-	sh ~/.config/scripts/windowswitch.sh -n
+	sh ~/.config/scripts/windowswitch.sh -b
 
 super + bracketright
-  sh ~/.config/scripts/windowswitch.sh -p
+  sh ~/.config/scripts/windowswitch.sh -n
 
 # focus the last desktop
 super + Tab
@@ -85,25 +85,25 @@ super + {o,i}
 
 # focus to the given desktop
 super + 1
-	sh ~/.config/scripts/windowswitch.sh 1
+	sh ~/.config/scripts/windowswitch.sh -c 1
 
 super + 2
-	sh ~/.config/scripts/windowswitch.sh 2
+	sh ~/.config/scripts/windowswitch.sh -c 2
 
 super + 3
-	sh ~/.config/scripts/windowswitch.sh 3
+	sh ~/.config/scripts/windowswitch.sh -c 3
 
 super + 4
-	sh ~/.config/scripts/windowswitch.sh 4
+	sh ~/.config/scripts/windowswitch.sh -c 4
 
 super + 5
-	sh ~/.config/scripts/windowswitch.sh 5
+	sh ~/.config/scripts/windowswitch.sh -c 5
 
 super + 6
-	sh ~/.config/scripts/windowswitch.sh 6
+	sh ~/.config/scripts/windowswitch.sh -c 6
 
 super + 7
-	sh ~/.config/scripts/windowswitch.sh 7
+	sh ~/.config/scripts/windowswitch.sh -c 7
 
 # send to given window
 super + shift + {1-9,0}

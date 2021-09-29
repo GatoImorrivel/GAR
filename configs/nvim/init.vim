@@ -29,7 +29,7 @@ set wildignore+=node_modules/**
 set backspace=indent,eol,start
 
 set undodir=~/vimundo
-set colorcolumn=80
+" set colorcolumn=80
 
 
 
