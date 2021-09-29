@@ -6,19 +6,33 @@
   )
 )
 
+(defvar activeWorkspace "1")
+(defvar previousWorkspace "1")
+
 (defwidget workspaces []
   (box :class "workspaces"
        :orientation "h"
        :space-evenly true
        :halign "start"
        (box :class "archlogo" "")
-       (button :class workspace1 :onclick "sh ~/.config/scripts/windowswitch.sh 1"  "")
-       (button :class workspace2 :onclick "sh ~/.config/scripts/windowswitch.sh 2" "")
-       (button :class workspace3 :onclick "sh ~/.config/scripts/windowswitch.sh 3" "")
-       (button :class workspace4 :onclick "sh ~/.config/scripts/windowswitch.sh 4" "")
-       (button :class workspace5 :onclick "sh ~/.config/scripts/windowswitch.sh 5" "")
-       (button :class workspace6 :onclick "sh ~/.config/scripts/windowswitch.sh 6" "")
-       (button :class workspace7 :onclick "sh ~/.config/scripts/windowswitch.sh 7" "")
+
+       (button :class {activeWorkspace == "1" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 1"  "")
+       (button :class {activeWorkspace == "2" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 2" "")
+       (button :class {activeWorkspace == "3" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 3" "")
+       (button :class {activeWorkspace == "4" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 4" "")
+       (button :class {activeWorkspace == "5" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 5" "")
+       (button :class {activeWorkspace == "6" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 6" "")
+       (button :class {activeWorkspace == "7" ? "workspaceActive" : "workspaceInactive"} 
+          :onclick "sh ~/.config/scripts/windowswitch.sh -c 7" "")
+       (box :class "previousWorkspace"
+          previousWorkspace
+       )
   )
 )
 
@@ -32,20 +46,20 @@
 )
 
 (defwidget sidestuff []
-  (box :class "date" 
-    date
+  (box :halign "end"
+       :orientation "h"
+       :space-evenly true
+
+    (box :class "date" 
+      date
+    )
+    (box
+      (button :class "powerButton" 
+      :onclick "eww open powermenu" "⏻")
+    )
   )
 )
 
-(defvar workspace1 "workspaceActive")
-(defvar workspace2 "workspaceInactive")
-(defvar workspace3 "workspaceInactive")
-(defvar workspace4 "workspaceInactive")
-(defvar workspace5 "workspaceInactive")
-(defvar workspace6 "workspaceInactive")
-(defvar workspace7 "workspaceInactive")
-
-(defvar windowswitch "sh ~/.config/scripts/windowswitch.sh")
 
 (defpoll time :interval "10s"
   "date '+%H:%M'"
@@ -65,7 +79,36 @@
                     )
           :stacking "fg"
           :reserve (struts :distance "20px" :side "top")
-          :windowtype "dock"
+          :windowtype "toolbar"
           :wm-ignore true
   (bar)
+)
+
+(defwidget powermenu []
+  (centerbox :orientation "h"
+             :class "mainPower"
+      (box :class "shutoffBox"
+        (button :class "shutoffButton" :onclick "shutdown now" "⏻")
+      )
+      (box :class "rebootBox"
+        (button :class "rebootButton" :onclick "reboot" "")
+      )
+      (box :class "closeBox"
+        (button :class "closeButton" :onclick "eww close powermenu" "")
+      )
+  )
+)
+
+(defwindow powermenu
+           :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "0px"
+                               :width "100%"
+                               :heigth "100%"
+                               :anchor "center"
+                     )
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (powermenu)
 )
