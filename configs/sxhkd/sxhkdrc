@@ -10,6 +10,10 @@ super + shift + Return
 super + @space
 	rofi -modi drun -show drun
 
+# powermenu
+super + p
+	eww open powermenu
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
