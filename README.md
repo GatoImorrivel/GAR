@@ -9,7 +9,9 @@ This is my script for installing a GUI on Arch. This was made for my own use but
 - Widgets & bar - eww
 
 # Screenshots
-ill add them when its finished
+<img src='/screenshots/desktop.png'>
+<img src='/screenshots/unixporntypeshit.png'>
+<img src='/screenshots/powermenu.png'>
 
 # Installing
 
