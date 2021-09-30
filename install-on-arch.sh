@@ -91,6 +91,12 @@ mkdir ~/.config/eww/
 sudo cp -r ~/GAR/configs/eww/eww.yuck ~/.config/eww/
 sudo cp -r ~/GAR/configs/eww/eww.scss ~/.config/eww/
 
+# Rofi
+mkdir ~/.config/rofi/
+
+sudo cp -r ~/GAR/configs/rofi/config.rasi ~/.config/eww/
+sudo cp -r ~/GAR/configs/rofi/launcher.rasi ~/.config/eww/
+
 # Wallpaper
 mkdir ~/.config/wallpapers/
 
