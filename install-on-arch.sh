@@ -11,6 +11,7 @@ sudo pacman -S --noconfirm --needed xorg xorg-xinit\
     xwallpaper                      \
     ttf-ubuntu-font-family          \
     rofi                            \
+    papirus-icon-theme              \
     yarn                            \
     nodejs                          \
     npm                             \
