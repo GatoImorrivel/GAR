@@ -32,6 +32,8 @@ configuration {
 }
 
 window {
+    border: 2px;
+    border-color: rgb(115, 155, 255);
     background-color: @bg;
     border-radius: 15px;
     width: 							35%;
