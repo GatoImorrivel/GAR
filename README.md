@@ -12,6 +12,7 @@ All of the settings are made with **1920x1080** in mind, functionality in other 
 # Screenshots
 <img src='/screenshots/desktop.png'>
 <img src='/screenshots/unixporntypestuff.png'>
+<img src='/screenshots/rofi.png'>
 <img src='/screenshots/powermenu.png'>
 
 # Installing
