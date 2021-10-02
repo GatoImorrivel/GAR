@@ -1,20 +1,17 @@
-                                                  
-                                                  
-     @@                                     @@    
-     ((@@@@                             @@@@((    
-      (((@@@@@@@                   @@@@@@@(((     
-      ((((@@@@@@@((((((((/////////@@@@@@@((((     
-      (((((,(((((((((((((//////////////.(((((     
-       (((,,,,(((((((((((////////////....(((      
-       ((,,,,,,((((((((((///////////......((      
-        ,,,,,,,,,((((((((/////////.........       
-       ,,,,,,,,,,,,((((((///////............      
-      ,,,,,,,,,,,,,,/((((/////*..............     
-    ,,,,,,,,,,,,,,,,,,(((////..................   
-   ,,,,,,,,,,,,,,,,,,,,,(//.....................  
-   ***************.######(((((((.,,,,,,,,,,,,,,,  
-       ********,.,,,,,###((((.......,,,,,,,,      
-          ,*.............(.............,.         
-                *********,,,,,,,,,,               
-                       **,,,                      
-                                                  
+     aa                                     aa    
+     ooaaaa                             aaaaoo    
+      oooaaaaaaa                   aaaaaaaooo     
+      ooooaaaaaaaoooooooo+++++++++aaaaaaaoooo     
+      ooooosooooooooooooo++++++++++++++gooooo     
+       ooossssooooooooooo++++++++++++ggggooo      
+       oossssssoooooooooo+++++++++++ggggggoo      
+        sssssssssoooooooo+++++++++ggggggggg       
+       ssssssssssssoooooo+++++++gggggggggggg      
+      ssssssssssssss+oooo+++++tgggggggggggggg     
+    ssssssssssssssssssooo++++gggggggggggggggggg   
+   ssssssssssssssssssssso++ggggggggggggggggggggg  
+   tttttttttttttttg++++++ooooooogsssssssssssssss  
+       ttttttttsgsssss+++oooogggggggssssssss      
+          stgggggggggggggogggggggggggggsg         
+                tttttttttssssssssss               
+                       ttsss
