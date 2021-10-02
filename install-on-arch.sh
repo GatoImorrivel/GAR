@@ -97,6 +97,12 @@ mkdir ~/.config/rofi/
 sudo cp -r ~/GAR/configs/rofi/config.rasi ~/.config/rofi/
 sudo cp -r ~/GAR/configs/rofi/launcher.rasi ~/.config/rofi/
 
+# Neofetch
+mkdir ~/.config/neofetch/
+
+sudo cp -r ~/GAR/configs/neofetch/ascii ~/.config/neofetch/
+alias neofetch='neofetch --source ~/.config/neofetch/ascii'
+
 # Wallpaper
 mkdir ~/.config/wallpapers/
 
