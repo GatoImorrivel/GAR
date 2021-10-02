@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias pac='sudo pacman -Syu'
+alias neofetch='neofetch --source ~/.config/neofetch/ascii'
 
 BLACK="\[\e[30m\]"
 BLUE="\[\e[34m\]"
